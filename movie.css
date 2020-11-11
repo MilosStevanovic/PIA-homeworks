@@ -1,0 +1,58 @@
+body{ 
+  background-image:url('images/background.png');
+    
+}
+* {
+  box-sizing: border-box;
+}
+
+
+
+.header{
+    
+    padding: 30px;
+    text-align: center;
+    font-size: 24pt;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-shadow:  3px, 3px,red;  /*NADJI KAKO SE SENCI BOJOM*/
+    
+}
+/* Container for flexboxes */
+section {
+  
+  display: flex;
+}
+nav {
+  
+  flex: 3;
+  background: #ccc;
+  padding: 10px;
+}
+/* Style the content */
+article {
+  flex: 1;
+  background-color: #f1f1f1;
+ 
+}
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  max-width: 55%;
+  margin: auto;
+}
+.content{
+    max-width: 55%;
+    border:  5px 5px;
+    background-color: #eeeeee;
+    margin: auto;
+}
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
