@@ -1,14 +1,13 @@
 body{ 
+  font-size: 12pt; /*proveri da li ovo treba tu*/
+  font-family: Arial, Helvetica, sans-serif;/*i ovo proveri*/
   background-image:url('images/background.png');
     
 }
 * {
   box-sizing: border-box;
 }
-
-
-
-.header{
+h1{
     
     padding: 30px;
     text-align: center;
@@ -18,41 +17,91 @@ body{
     text-shadow:  3px, 3px,red;  /*NADJI KAKO SE SENCI BOJOM*/
     
 }
-/* Container for flexboxes */
+
 section {
   
   display: flex;
+  display: -webkit-flex;
+  max-width: 55%;
+  border:  5px  solid gray;
+background-color: #eeeeee;
+  margin: auto;
+  padding: 5px;
 }
 nav {
-  
   flex: 3;
-  background: #ccc;
-  padding: 10px;
+  background: #EEEEEE.;
 }
-/* Style the content */
+/* Style th content */
 article {
-  flex: 1;
-  background-color: #f1f1f1;
+  flex: 1;  
+  background-color: #A2B964;
+  display: block;
  
 }
-/* Style the footer */
+
 footer {
-  background-color: #777;
+  background-color: #A2B964;
   padding: 10px;
   text-align: center;
   color: white;
   max-width: 55%;
   margin: auto;
-}
-.content{
-    max-width: 55%;
-    border:  5px 5px;
-    background-color: #eeeeee;
-    margin: auto;
-}
-@media (max-width: 600px) {
-  section {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
 
+}
+
+
+
+.ocena{
+  font-size: 48pt;
+  font-weight: bold;
+  color: red;
+  position: absolute;
+
+
+}
+.quotebubble { /*ne radi iy nekog razloga*/
+  font-size: 13pt;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 2px solid #cccccc;
+  border-radius: 12px;
+  padding: 1em;
+  width: 90%;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.publication{
+  font-size: 13pt;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 2.4em;
+  width: 90%;
+  margin: auto;
+  font-style: italic;
+}
+
+
+dl{
+  padding-left: 15px;
+  font-size: 12pt;
+  font-family: Arial, Helvetica, sans-serif;
+}
+dt{
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+ul{
+  list-style-type: none;
+  font-size: 12pt;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px;
+}
+
+a{
+  color: #0c57c9;
+}
+#w3c{
+  float:right;
+  
+}
