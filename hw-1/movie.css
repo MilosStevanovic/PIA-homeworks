@@ -1,3 +1,4 @@
+ }
 body{ 
   font-size: 12pt; /*proveri da li ovo treba tu*/
   font-family: Arial, Helvetica, sans-serif;/*i ovo proveri*/
@@ -17,29 +18,28 @@ h1{
     text-shadow:  3px, 3px,red;  /*NADJI KAKO SE SENCI BOJOM*/
     
 }
-
-section {
+/* kontejner za kolone */
+.container {
   
   display: flex;
-  display: -webkit-flex;
   max-width: 55%;
   border:  5px  solid gray;
 background-color: #eeeeee;
   margin: auto;
   padding: 5px;
 }
-nav {
+/*stilizacija lefe kolone*/
+  .left {
   flex: 3;
-  background: #EEEEEE.;
-}
-/* Style th content */
-article {
-  flex: 1;  
-  background-color: #A2B964;
-  display: block;
- 
+  background: #EEEEEE;
 }
 
+/* stilizacija desne kolone */
+.right {
+  flex: 1;
+  background-color: #A2B964;
+}
+/* stilizacija futera */
 footer {
   background-color: #A2B964;
   padding: 10px;
@@ -51,14 +51,20 @@ footer {
 }
 
 
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
 
+
+
+
+}
 .ocena{
   font-size: 48pt;
   font-weight: bold;
   color: red;
-  position: absolute;
-
-
+position: absolute;
 }
 .quotebubble { /*ne radi iy nekog razloga*/
   font-size: 13pt;
@@ -75,9 +81,10 @@ footer {
   font-size: 13pt;
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 2.4em;
-  width: 90%;
   margin: auto;
   font-style: italic;
+  width: 90%;
+
 }
 
 
