@@ -28,6 +28,13 @@ background-color: #eeeeee;
   padding: 5px;
 }
 
+.baner{
+  background-image: url('images/rbg.png');
+  background-repeat: repeat-x;
+  width: 100%;
+}
+
+
   .left {
   flex: 3;
   background: #EEEEEE;
