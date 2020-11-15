@@ -1,29 +1,30 @@
+
 body{ 
-  font-size: 12pt; /*proveri da li ovo treba tu*/
-  font-family: Arial, Helvetica, sans-serif;/*i ovo proveri*/
+  font-size: 12pt; 
+  font-family: Arial, Helvetica, sans-serif;
   background-image:url('images/background.png');
     
 }
 * {
   box-sizing: border-box;
 }
-h1{
+header {
     
     padding: 30px;
     text-align: center;
     font-size: 24pt;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    text-shadow:  3px, 3px,red;  /*NADJI KAKO SE SENCI BOJOM*/
+    text-shadow:  3px, 3px,#999999;  /*NADJI KAKO SE SENCI BOJOM*/
     
 }
-/* Container for flexboxes */
+
 .container {
   
   display: flex;
   max-width: 55%;
   border:  5px  solid gray;
-background-color: #eeeeee;
+  background-color: #eeeeee;
   margin: auto;
   padding: 5px;
 }
@@ -35,17 +36,17 @@ background-color: #eeeeee;
 }
 
 
+
   .left {
   flex: 3;
   background: #EEEEEE;
+ 
 }
 
-/* Style the content */
 .right {
   flex: 1;
   background-color: #A2B964;
 }
-/* Style the footer */
 footer {
   background-color: #A2B964;
   padding: 10px;
@@ -63,13 +64,14 @@ footer {
   }
 
 }
-.ocena{
+.rating{
   font-size: 48pt;
   font-weight: bold;
   color: red;
-position: absolute;
+  position: absolute;
+
 }
-.quotebubble { /*ne radi iy nekog razloga*/
+.quotebubble {
   font-size: 13pt;
   font-family: Georgia, 'Times New Roman', Times, serif;
   border: 2px solid #cccccc;
@@ -78,18 +80,26 @@ position: absolute;
   width: 90%;
   margin: auto;
   background-color: #ffffff;
+  line-height: 1.5;
 }
 
 .publication{
   font-size: 13pt;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  padding: 2.4em;
   font-style: italic;
   width: 90%;
+  padding: 65px;
+}
+.critic-gif{ /*slika ispred kriticara*/
+  padding-right: 5px;
+  margin-left: 20px;
+  vertical-align: middle;
 
 }
-.critic-gif{
-  padding-left: 2em;
+
+.fres-gif { /*slika ispred komentara*/
+  padding: 5px;
+  vertical-align: middle;
 }
 
 dl{
@@ -100,6 +110,7 @@ dl{
 dt{
   font-weight: bold;
   padding-top: 15px;
+
 }
 
 ul{
